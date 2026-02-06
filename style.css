@@ -1,0 +1,169 @@
+:root {
+    --cor-principal: #8E9775; /* Verde Oliva suave */
+    --cor-fundo: #FAF9F6;      /* Off-white clean */
+    --cor-cards: #FFFFFF;
+    --cor-texto: #4A4A4A;
+    --cor-destaque: #E28E8E;   /* Tom rosado */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Efeito Parallax */
+.hero-parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 2.5rem;
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(4px);
+}
+
+.overlay h1 {
+    font-size: 3rem;
+    color: var(--cor-principal);
+    margin-bottom: 10px;
+}
+
+/* Container de Conteúdo */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: var(--cor-fundo);
+    position: relative;
+    z-index: 2;
+}
+
+.titulo-sessao {
+    text-align: center;
+    margin: 40px 0 30px;
+    color: var(--cor-principal);
+    font-size: 2rem;
+}
+
+/* Mural de Fotos */
+.grid-fotos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.grid-fotos img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.grid-fotos img:hover {
+    transform: scale(1.05);
+}
+
+/* Lista de Presentes */
+.categoria-box {
+    background: var(--cor-cards);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.categoria-box h3 {
+    border-bottom: 2px solid var(--cor-fundo);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: var(--cor-principal);
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.item:last-child { border-bottom: none; }
+
+button {
+    background-color: var(--cor-principal);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--cor-destaque);
+    transform: translateY(-2px);
+}
+
+/* Itens Reservados */
+.item.reservado {
+    opacity: 0.5;
+}
+
+.item.reservado span {
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.item.reservado button {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .overlay h1 { font-size: 2rem; }
+    .grid-fotos { grid-template-columns: 1fr 1fr; }
+    .item { flex-direction: column; gap: 10px; text-align: center; }
+}
+
+.pix-box {
+    text-align: center;
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #eee;
+    margin-bottom: 40px;
+}
+
+.qr-code {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.pix-box p {
+    margin: 5px 0;
+    font-size: 1.1rem;
+}
