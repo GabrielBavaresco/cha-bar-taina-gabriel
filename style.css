@@ -167,3 +167,32 @@ button:hover {
     margin: 5px 0;
     font-size: 1.1rem;
 }
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.botoes-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-preferencia {
+    background-color: #f4f4f4;
+    color: #333;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.btn-preferencia:hover {
+    background-color: #ddd;
+}

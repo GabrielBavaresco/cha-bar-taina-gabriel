@@ -19,8 +19,8 @@
         <section class="info-evento">
             <h2 class="titulo-sessao">Onde e Quando?</h2>
             <div class="info-box">
-                <p><strong>Data:</strong> Em breve</p>
-                <p><strong>Local:</strong> Em breve</p>
+                <p><strong> 🗓️ Data:</strong> Em breve</p>
+                <p><strong> 📍 Local:</strong> Em breve</p>
             </div>
         </section>
 
@@ -44,45 +44,130 @@
 
             <div class="categoria-box">
                 <h3>Cozinha 🍳</h3>
-                <div class="item"><span>1. Cafeteira</span><button onclick="reservar('Cafeteira')">Reservar</button></div>
-                <div class="item"><span>2. Geladeira</span><button onclick="reservar('Geladeira')">Reservar</button></div>
+                <div class="item reservado"><span>1. Cafeteira</span><button disabled>Reservado</button></div>
+                <div class="item">
+                    <span>2. Geladeira</span>
+                    <div class="botoes-wrapper">
+                        <a href="LINK_AQUI" target="_blank" class="btn-preferencia">Item de preferência</a>
+                        <button onclick="reservar('Geladeira')">Reservar</button>
+                    </div>
+                </div>
                 <div class="item reservado"><span>3. Jogo de copos</span><button disabled>Reservado</button></div>
-                <div class="item"><span>4. Jogo de facas de cozinha</span><button onclick="reservar('Jogo de facas de cozinha')">Reservar</button></div>
+                <div class="item reservado"><span>4. Jogo de facas de cozinha</span><button disabled>Reservado</button></div>
                 <div class="item reservado"><span>5. Jogo de panelas</span><button disabled>Reservado</button></div>
                 <div class="item reservado"><span>6. Jogo de pratos</span><button disabled>Reservado</button></div>
                 <div class="item reservado"><span>7. Jogo de taças</span><button disabled>Reservado</button></div>
-                <div class="item"><span>8. Jogo de talheres</span><button onclick="reservar('Jogo de talheres')">Reservar</button></div>
-                <div class="item"><span>9. Liquidificador</span><button onclick="reservar('Liquidificador')">Reservar</button></div>
-                <div class="item"><span>10. Mesa de jantar com cadeiras</span><button onclick="reservar('Mesa de jantar')">Reservar</button></div>
+                <div class="item reservado"><span>8. Jogo de talheres</span><button disabled>Reservado</button></div>
+                <div class="item reservado"><span>9. Liquidificador</span><button disabled>Reservado</button></div>
+                <div class="item">
+                    <span>10. Mesa de jantar com cadeiras</span>
+                    <div class="botoes-wrapper">
+                        <a href="LINK_AQUI" target="_blank" class="btn-preferencia">Item de preferência</a>
+                        <button onclick="reservar('Mesa de jantar')">Reservar</button>
+                    </div>
+                </div>
                 <div class="item reservado"><span>11. Micro-ondas</span><button disabled>Reservado</button></div>
-                <div class="item"><span>12. Mixer</span><button onclick="reservar('Mixer')">Reservar</button></div>
-                <div class="item"><span>13. Processador</span><button onclick="reservar('Processador')">Reservar</button></div>
-                <div class="item"><span>14. Purificador de água</span><button onclick="reservar('Purificador de água')">Reservar</button></div>
-                <div class="item"><span>15. Sanduicheira</span><button onclick="reservar('Sanduicheira')">Reservar</button></div>
-                <div class="item"><span>16. Torradeira</span><button onclick="reservar('Torradeira')">Reservar</button></div>
+                <div class="item reservado"><span>12. Mixer</span><button disabled>Reservado</button></div>
+                <div class="item reservado"><span>13. Processador</span><button disabled>Reservado</button></div>
+                <div class="item">
+                    <span>14. Purificador de água</span>
+                    <div class="botoes-wrapper">
+                        <a href="LINK_AQUI" target="_blank" class="btn-preferencia">Item de preferência</a>
+                        <button onclick="reservar('Purificador de água')">Reservar</button>
+                    </div>
+                </div>
+                <div class="item reservado"><span>15. Sanduicheira</span><button disabled>Reservado</button></div>
+                <div class="item reservado"><span>16. Torradeira</span><button disabled>Reservado</button></div>
             </div>
 
             <div class="categoria-box">
                 <h3>Lavanderia & Limpeza 🧼</h3>
                 <div class="item reservado"><span>17. Aspirador de pó</span><button disabled>Reservado</button></div>
                 <div class="item reservado"><span>18. Ferro de passar roupa</span><button disabled>Reservado</button></div>
-                <div class="item"><span>19. Máquina de lavar ou Lava e Seca</span><button onclick="reservar('Máquina de lavar')">Reservar</button></div>
-                <div class="item reservado"><span>20. Tábua de passar roupa</span><button disabled>Reservado</button></div>
-                <div class="item reservado"><span>21. Varal de chão</span><button disabled>Reservado</button></div>
+                <div class="item">
+                    <span>19. Máquina de lavar ou Lava e Seca</span>
+                    <div class="botoes-wrapper">
+                        <a href="LINK_AQUI" target="_blank" class="btn-preferencia">Item de preferência</a>
+                        <button onclick="reservar('Máquina de lavar')">Reservar</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <span>20. Chuveiro</span>
+                    <div class="botoes-wrapper">
+                        <a href="LINK_AQUI" target="_blank" class="btn-preferencia">Item de preferência</a>
+                        <button onclick="reservar('Chuveiro')">Reservar</button>
+                    </div>
+                </div>
+                <div class="item reservado"><span>21. Tábua de passar roupa</span><button disabled>Reservado</button></div>
+                <div class="item reservado"><span>22. Varal de chão</span><button disabled>Reservado</button></div>
             </div>
 
             <div class="categoria-box">
                 <h3>Sala, Quarto e Escritório 🏠</h3>
-                <div class="item"><span>22. Ar condicionado</span><button onclick="reservar('Ar condicionado')">Reservar</button></div>
-                <div class="item"><span>23. Cadeira de escritório giratória</span><button onclick="reservar('Cadeira de escritório')">Reservar</button></div>
-                <div class="item"><span>24. Base Cama</span><button onclick="reservar('Base Cama')">Reservar</button></div>
-                <div class="item"><span>25. Colchão (Macio)</span><button onclick="reservar('Colchão')">Reservar</button></div>
-                <div class="item"><span>26. Estante</span><button onclick="reservar('Estante')">Reservar</button></div>
-                <div class="item"><span>27. Jogo de Banho</span><button onclick="reservar('Jogo de Banho')">Reservar</button></div>
-                <div class="item"><span>28. Mesa de cabeceira</span><button onclick="reservar('Mesa de cabeceira')">Reservar</button></div>
-                <div class="item"><span>29. Multiuso</span><button onclick="reservar('Multiuso')">Reservar</button></div>
-                <div class="item"><span>30. Rack de Tv</span><button onclick="reservar('Rack de Tv')">Reservar</button></div>
-                <div class="item"><span>31. Roupa de Cama</span><button onclick="reservar('Roupa de Cama')">Reservar</button></div>
+                <div class="item">
+                    <span>23. Ar condicionado</span>
+                    <div class="botoes-wrapper">
+                        <a href="LINK_AQUI" target="_blank" class="btn-preferencia">Item de preferência</a>
+                        <button onclick="reservar('Ar condicionado')">Reservar</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <span>24. Cadeira de escritório giratória</span>
+                    <div class="botoes-wrapper">
+                        <a href="LINK_AQUI" target="_blank" class="btn-preferencia">Item de preferência</a>
+                        <button onclick="reservar('Cadeira de escritório')">Reservar</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <span>25. Cama Box Casal</span>
+                    <div class="botoes-wrapper">
+                        <a href="LINK_AQUI" target="_blank" class="btn-preferencia">Item de preferência</a>
+                        <button onclick="reservar('Cama Box Casal')">Reservar</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <span>26. Frigobar</span>
+                    <div class="botoes-wrapper">
+                        <a href="LINK_AQUI" target="_blank" class="btn-preferencia">Item de preferência</a>
+                        <button onclick="reservar('Frigobar')">Reservar</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <span>27. Estante</span>
+                    <div class="botoes-wrapper">
+                        <a href="LINK_AQUI" target="_blank" class="btn-preferencia">Item de preferência</a>
+                        <button onclick="reservar('Estante')">Reservar</button>
+                    </div>
+                </div>
+                <div class="item reservado"><span>28. Jogo de Banho</span><button disabled>Reservado</button></div>
+                <div class="item">
+                    <span>29. Mesa de cabeceira</span>
+                    <div class="botoes-wrapper">
+                        <a href="LINK_AQUI" target="_blank" class="btn-preferencia">Item de preferência</a>
+                        <button onclick="reservar('Mesa de cabeceira')">Reservar</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <span>30. Multiuso</span>
+                    <div class="botoes-wrapper">
+                        <a href="LINK_AQUI" target="_blank" class="btn-preferencia">Item de preferência</a>
+                        <button onclick="reservar('Multiuso')">Reservar</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <span>31. Rack de Tv</span>
+                    <div class="botoes-wrapper">
+                        <a href="LINK_AQUI" target="_blank" class="btn-preferencia">Item de preferência</a>
+                        <button onclick="reservar('Rack de Tv')">Reservar</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <span>32. Roupa de Cama</span>
+                    <div class="botoes-wrapper">
+                        <a href="LINK_AQUI" target="_blank" class="btn-preferencia">Item de preferência</a>
+                        <button onclick="reservar('Roupa de Cama')">Reservar</button>
+                    </div>
+                </div>
             </div>
         </section>
 
