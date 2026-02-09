@@ -98,16 +98,26 @@ body {
     color: var(--cor-principal);
 }
 
+/* Ajuste do Item para suportar dois botões */
 .item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
     border-bottom: 1px solid #f0f0f0;
+    gap: 15px;
 }
 
 .item:last-child { border-bottom: none; }
 
+/* Wrapper dos botões */
+.botoes-wrapper {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Estilo do Botão de Reserva */
 button {
     background-color: var(--cor-principal);
     color: white;
@@ -119,8 +129,27 @@ button {
     transition: 0.3s ease;
 }
 
-button:hover {
+button:hover:not(:disabled) {
     background-color: var(--cor-destaque);
+    transform: translateY(-2px);
+}
+
+/* Estilo do Botão de Preferência (Link) */
+.btn-preferencia {
+    background-color: #f4f4f4;
+    color: #333;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.btn-preferencia:hover {
+    background-color: #ddd;
     transform: translateY(-2px);
 }
 
@@ -139,13 +168,7 @@ button:hover {
     cursor: not-allowed;
 }
 
-/* Mobile */
-@media (max-width: 600px) {
-    .overlay h1 { font-size: 2rem; }
-    .grid-fotos { grid-template-columns: 1fr 1fr; }
-    .item { flex-direction: column; gap: 10px; text-align: center; }
-}
-
+/* Seção Pix */
 .pix-box {
     text-align: center;
     background: #f9f9f9;
@@ -163,36 +186,25 @@ button:hover {
     border-radius: 5px;
 }
 
-.pix-box p {
-    margin: 5px 0;
-    font-size: 1.1rem;
-}
+/* Mobile - Ajustes importantes */
+@media (max-width: 600px) {
+    .overlay h1 { font-size: 2rem; }
+    .grid-fotos { grid-template-columns: 1fr 1fr; }
+    
+    .item { 
+        flex-direction: column; 
+        gap: 12px; 
+        text-align: center; 
+        padding: 20px 0;
+    }
 
-.item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
-}
+    .botoes-wrapper {
+        flex-direction: column;
+        width: 100%;
+    }
 
-.botoes-wrapper {
-    display: flex;
-    gap: 10px;
-}
-
-.btn-preferencia {
-    background-color: #f4f4f4;
-    color: #333;
-    text-decoration: none;
-    padding: 8px 12px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    border: 1px solid #ccc;
-    transition: 0.3s;
-    white-space: nowrap;
-}
-
-.btn-preferencia:hover {
-    background-color: #ddd;
+    .btn-preferencia, button {
+        width: 100%;
+        text-align: center;
+    }
 }
