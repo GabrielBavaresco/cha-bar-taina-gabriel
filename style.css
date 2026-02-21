@@ -208,3 +208,17 @@ button:hover:not(:disabled) {
         text-align: center;
     }
 }
+ .desc-pix {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.desc-pix strong {
+    color: #d4a373; /* Ou a cor principal do seu site */
+}
+
+.info-box p {
+    margin: 5px 0;
+}

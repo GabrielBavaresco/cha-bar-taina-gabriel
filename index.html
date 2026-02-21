@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chá Bar | Taina & Gabriel</title>
+    
+    <link rel="icon" type="image/png" href="assets/casa_nova/favicon.png">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +14,8 @@
     <div class="hero-parallax" style="background-image: url('assets/casa_nova/ano_novo_2026_2.png');">
         <div class="overlay">
             <h1>Nosso Chá Bar</h1>
-            <p>Taina & Gabriel</p>
+            <p>Construir um lar vai além de tijolos e móveis; trata-se de cultivar o espaço onde nossos sonhos criarão raízes. Nossa maior alegria é abrir as portas dessa nova fase com você ao nosso lado.</p>
+            <span class="subtexto">Taina & Gabriel</span>
         </div>
     </div>
 
@@ -19,8 +23,14 @@
         <section class="info-evento">
             <h2 class="titulo-sessao">Onde e Quando?</h2>
             <div class="info-box">
-                <p><strong> 🗓️ Data:</strong> Em breve</p>
-                <p><strong> 📍 Local:</strong> Em breve</p>
+                <p><strong> 🗓️ Data:</strong> 28/02/2025</p>
+                <p><strong> 📍 Local:</strong> 
+                    <a href="https://www.google.com/maps/search/?api=1&query=Rua+Ingá+144+Jardim+Recreio+Ribeirão+Preto" 
+                       target="_blank" 
+                       style="text-decoration: underline; color: inherit;">
+                       Rua Ingá 144 - Jardim Recreio
+                    </a>
+                </p>
                 <p><strong> 🧺 O que levar:</strong> Levar sua bebida</p>
             </div>
         </section>
@@ -45,11 +55,11 @@
 
             <div class="categoria-box">
                 <h3>Cozinha 🍳</h3>
-                <div class="item reservado"><span>1. Cafeteira</span><button disabled>Reservado</button></div>
+                <div class="item"><span>1. Coifa</span><div class="botoes-wrapper"><a href="https://www.mercadolivre.com.br/depurador-e-exaustor-de-ar-suggar-slim-dps181pt-80cm-cor-preto/p/MLB24254286#reviews" target="_blank" class="btn-preferencia">Item de preferência</a><button onclick="reservar('Coifa')">Reservar</button></div></div>
                 <div class="item">
-                    <span>2. Geladeira</span>
+                    <span>2. Geladeira (127 V ou bi volt)</span>
                     <div class="botoes-wrapper">
-                        <a href="LINK_AQUI" target="_blank" class="btn-preferencia">Item de preferência</a>
+                        <a href="https://www.casasbahia.com.br/geladeira-frost-free-duplex-consul-455-litros-inox-crm56mk/p/1576832364" target="_blank" class="btn-preferencia">Item de preferência</a>
                         <button onclick="reservar('Geladeira')">Reservar</button>
                     </div>
                 </div>
@@ -63,7 +73,7 @@
                 <div class="item">
                     <span>10. Mesa de jantar com cadeiras</span>
                     <div class="botoes-wrapper">
-                        <a href="LINK_AQUI" target="_blank" class="btn-preferencia">Item de preferência</a>
+                        <a href="https://www.mercadolivre.com.br/conjunto-sala-de-jantar-mesa-tampo-mdfvidro-e-4-cadeiras/up/MLBU3158721834" target="_blank" class="btn-preferencia">Item de preferência</a>
                         <button onclick="reservar('Mesa de jantar')">Reservar</button>
                     </div>
                 </div>
@@ -71,9 +81,9 @@
                 <div class="item reservado"><span>12. Mixer</span><button disabled>Reservado</button></div>
                 <div class="item reservado"><span>13. Processador</span><button disabled>Reservado</button></div>
                 <div class="item">
-                    <span>14. Purificador de água</span>
+                    <span>14. Purificador de água (127 v)</span>
                     <div class="botoes-wrapper">
-                        <a href="LINK_AQUI" target="_blank" class="btn-preferencia">Item de preferência</a>
+                        <a href="https://www.mercadolivre.com.br/ibbl-fr600-speciale-branco-127v/p/MLB22338049" target="_blank" class="btn-preferencia">Item de preferência</a>
                         <button onclick="reservar('Purificador de água')">Reservar</button>
                     </div>
                 </div>
@@ -84,17 +94,14 @@
             <div class="categoria-box">
                 <h3>Lavanderia & Limpeza 🧼</h3>
                 <div class="item reservado"><span>17. Aspirador de pó</span><button disabled>Reservado</button></div>
-                <div class="item reservado"><span>18. Ferro de passar roupa</span><button disabled>Reservado</button></div>
                 <div class="item reservado"><span>19. Máquina de lavar ou Lava e Seca</span><button disabled>Reservado</button></div>
                 <div class="item">
-                    <span>20. Chuveiro</span>
+                    <span>20. Chuveiro (220 V, 7.5 Kw) </span>
                     <div class="botoes-wrapper">
-                        <a href="LINK_AQUI" target="_blank" class="btn-preferencia">Item de preferência</a>
+                        <a href="https://www.mercadolivre.com.br/lorenzetti-loren-shower-eletrnica-branco-220v-75-kw/p/MLB19590092" target="_blank" class="btn-preferencia">Item de preferência</a>
                         <button onclick="reservar('Chuveiro')">Reservar</button>
                     </div>
                 </div>
-                <div class="item reservado"><span>21. Tábua de passar roupa</span><button disabled>Reservado</button></div>
-                <div class="item reservado"><span>22. Varal de chão</span><button disabled>Reservado</button></div>
             </div>
 
             <div class="categoria-box">
@@ -102,72 +109,51 @@
                 <div class="item">
                     <span>23. Ar condicionado</span>
                     <div class="botoes-wrapper">
-                        <a href="LINK_AQUI" target="_blank" class="btn-preferencia">Item de preferência</a>
+                        <a href="https://www.mercadolivre.com.br/ar-condicionado-split-12000-btus-inverter-ai-ecomaster-frio-42ezvca12m5-38ezvca12m5-springer-midea-cor-branco/p/MLB53367442" target="_blank" class="btn-preferencia">Opção 1 (ML)</a>
+                        <a href="https://sp.olx.com.br/regiao-de-ribeirao-preto/eletro/ar-condicionados/vendo-ar-condicionado-1478639438" target="_blank" class="btn-preferencia">Opção 2 (OLX)</a>
                         <button onclick="reservar('Ar condicionado')">Reservar</button>
                     </div>
                 </div>
                 <div class="item">
-                    <span>24. Cadeira de escritório giratória</span>
+                    <span>24. Cadeiras de Escritório</span>
                     <div class="botoes-wrapper">
-                        <a href="LINK_AQUI" target="_blank" class="btn-preferencia">Item de preferência</a>
-                        <button onclick="reservar('Cadeira de escritório')">Reservar</button>
+                        <a href="https://www.mercadolivre.com.br/primeoffice-diretor-p210-hera-rosa-claro-meshtecido-unidade-1/p/MLB54248943" target="_blank" class="btn-preferencia">Tainá</a>
+                        <a href="https://www.mercadolivre.com.br/cadeira-de-escritorio-confortavel-ergonmica-giratoria-c600-fivdaily-preta-e-apoio-de-cabeca-com-suporte-lombar-estofado-de-mesh-almofada-de-assento-de-espuma-nova-latex-espessa-totalmente-rodinhas/p/MLB63029755" target="_blank" class="btn-preferencia">Gabriel</a>
+                        <button onclick="reservar('Cadeiras de Escritório')">Reservar</button>
                     </div>
                 </div>
-                <div class="item">
-                    <span>25. Cama Box Casal</span>
-                    <div class="botoes-wrapper">
-                        <a href="LINK_AQUI" target="_blank" class="btn-preferencia">Item de preferência</a>
-                        <button onclick="reservar('Cama Box Casal')">Reservar</button>
-                    </div>
-                </div>
-                <div class="item">
-                    <span>26. Frigobar</span>
-                    <div class="botoes-wrapper">
-                        <a href="LINK_AQUI" target="_blank" class="btn-preferencia">Item de preferência</a>
-                        <button onclick="reservar('Frigobar')">Reservar</button>
-                    </div>
-                </div>
-                <div class="item">
-                    <span>27. Estante</span>
-                    <div class="botoes-wrapper">
-                        <a href="LINK_AQUI" target="_blank" class="btn-preferencia">Item de preferência</a>
-                        <button onclick="reservar('Estante')">Reservar</button>
-                    </div>
-                </div>
+                <div class="item"><span>25. Cama Box Casal</span><div class="botoes-wrapper"><a href="LINK_AQUI" target="_blank" class="btn-preferencia">Item de preferência</a><button onclick="reservar('Cama Box Casal')">Reservar</button></div></div>
+                <div class="item"><span>26. Frigobar</span><div class="botoes-wrapper"><a href="LINK_AQUI" target="_blank" class="btn-preferencia">Item de preferência</a><button onclick="reservar('Frigobar')">Reservar</button></div></div>
+                <div class="item"><span>27. Estante </span><div class="botoes-wrapper"><a href="https://www.mercadolivre.com.br/kit-05-prateleiras-30x10-mdf-livros-decoracao-fotos-quarto/up/MLBU3491644647?picker=true&quantity=1#reviews" target="_blank" class="btn-preferencia">Item de preferência</a><button onclick="reservar('Estante')">Reservar</button></div></div>
                 <div class="item reservado"><span>28. Jogo de Banho</span><button disabled>Reservado</button></div>
-                <div class="item">
-                    <span>29. Mesa de cabeceira</span>
-                    <div class="botoes-wrapper">
-                        <a href="LINK_AQUI" target="_blank" class="btn-preferencia">Item de preferência</a>
-                        <button onclick="reservar('Mesa de cabeceira')">Reservar</button>
-                    </div>
-                </div>
-                <div class="item">
-                    <span>30. Multiuso</span>
-                    <div class="botoes-wrapper">
-                        <a href="LINK_AQUI" target="_blank" class="btn-preferencia">Item de preferência</a>
-                        <button onclick="reservar('Multiuso')">Reservar</button>
-                    </div>
-                </div>
-                <div class="item">
-                    <span>31. Rack de Tv</span>
-                    <div class="botoes-wrapper">
-                        <a href="LINK_AQUI" target="_blank" class="btn-preferencia">Item de preferência</a>
-                        <button onclick="reservar('Rack de Tv')">Reservar</button>
-                    </div>
-                </div>
-                <div class="item">
-                    <span>32. Roupa de Cama</span>
-                    <div class="botoes-wrapper">
-                        <a href="LINK_AQUI" target="_blank" class="btn-preferencia">Item de preferência</a>
-                        <button onclick="reservar('Roupa de Cama')">Reservar</button>
-                    </div>
-                </div>
+                <div class="item"><span>29. Mesa de Cabeceira (2 unidades - Madeirado)</span><div class="botoes-wrapper"><a href="https://produto.mercadolivre.com.br/MLB-1986180665-criado-suspenso-apoio-lateral-cabeceira-mdf-18mm-1un-_JM?attributes=COLOR_SECONDARY_COLOR%3ATG91cm8gZnJlaWrDsw%3D%3D&quantity=1&picker=true" target="_blank" class="btn-preferencia">Item de preferência</a><button onclick="reservar('Mesa de cabeceira')">Reservar</button></div></div>
+                <div class="item"><span>30. Aparador</span><div class="botoes-wrapper"><a href="https://produto.mercadolivre.com.br/MLB-4169802268-buffet-aparador-3-portas-ripado-com-pes-de-mdf-asturias-_JM#reviews" class="btn-preferencia">Item de preferência</a><button onclick="reservar('Multiuso')">Reservar</button></div></div>
+                <div class="item"><span>31. Cabeceira Cama Box (Cinza)</span><div class="botoes-wrapper"><a href="https://www.mercadolivre.com.br/kit-8-pecas-cabeceira-de-cama-modular-para-cama-box-de-queen/up/MLBU3360799878?product_trigger_id=MLB60997435&pdp_filters=item_id%3AMLB4160411467&applied_product_filters=MLBU3360799876&picker=true&quantity=1" target="_blank" class="btn-preferencia">Item de preferência</a><button onclick="reservar('Rack de Tv')">Reservar</button></div></div>
+                <div class="item"><span>32. Roupa de Cama Box</span><div class="botoes-wrapper"><button onclick="reservar('Roupa de Cama')">Reservar</button></div></div>
+                <div class="item"><span>33. TV</span><div class="botoes-wrapper"><a href="https://www.mercadolivre.com.br/smart-tv-un55u8100fgxzd-crystal-55-4k-preto-samsung-bivolt/p/MLB50308413#polycard_client=recommendations_vpp-pdp-v2p-pom&reco_backend=ranker_retrieval_system_vpp_v2p&reco_model=ranker_entity_v2_retrieval_system_vpp_v2p&reco_client=vpp-pdp-v2p-pom&reco_item_pos=2&reco_backend_type=low_level&reco_id=f25ae314-1146-4b43-bc64-0773f0d746b9&wid=MLB4110379897&sid=recos" target="_blank" class="btn-preferencia">Item de preferência</a><button onclick="reservar('TV')">Reservar</button></div></div>
+                <div class="item"><span>34. Rack Quarto (Madeirado)</span><div class="botoes-wrapper"><a href="https://www.mercadolivre.com.br/edn-nicho-painel-200-madeirado/p/MLB53280944?product_trigger_id=MLB26515205&picker=true&quantity=1#reviews" target="_blank" class="btn-preferencia">Item de preferência</a><button onclick="reservar('TV')">Reservar</button></div></div>
+                <div class="item"><span>35. Rack de Tv (Off-White)</span><div class="botoes-wrapper"><a href="https://www.mercadolivre.com.br/edn-nicho-painel-200-off-white/p/MLB26515205?product_trigger_id=MLB53280944&picker=true&quantity=1" target="_blank" class="btn-preferencia">Item de preferência</a><button onclick="reservar('Rack de Tv')">Reservar</button></div></div>
+            </div>
+        </section>
+
+        <section class="endereco-entrega">
+            <h2 class="titulo-sessao">Para envios e entregas 🏠</h2>
+            <div class="info-box">
+                <p>Se optar por comprar online ou enviar um mimo, nosso novo porto seguro fica em:</p>
+                <p><strong>Rua Teresa Tossani Livrini, 591 - Casa</strong></p>
+                <p>Presidente Médice - Ribeirão Preto / SP</p>
+                <p>CEP: 14091-340</p>
+                <p><small>Aos cuidados de: Taina ou Gabriel</small></p>
             </div>
         </section>
 
         <section class="pix-section">
-            <h2 class="titulo-sessao">Caso prefiram dar dinheiro, temos a opção do pix</h2>
+            <h2 class="titulo-sessao">Um brinde à nossa casa!</h2>
+            <p class="desc-pix" style="text-align: center; margin-bottom: 20px;">
+                Se o seu desejo é nos presentear mas você prefere a praticidade, sinta-se à vontade para contribuir via PIX. 
+                Prometemos que cada centavo ajudará a montar nosso cantinho, e <strong>com certeza brindaremos em seu nome!</strong> 🥂
+            </p>
+            
             <div class="pix-box">
                 <img src="assets/casa_nova/QR_CODE_PIX.png" alt="QR Code Pix" class="qr-code">
                 <p><strong>Chave Pix (Celular):</strong> 16 99253 6381</p>
