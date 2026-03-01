@@ -222,3 +222,7 @@ button:hover:not(:disabled) {
 .info-box p {
     margin: 5px 0;
 }
+
+.confirmar {
+    text-align: center; 
+}
