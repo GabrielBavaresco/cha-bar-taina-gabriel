@@ -6,3 +6,12 @@ function reservar(nomeItem) {
     
     window.open(linkZap, '_blank');
 }
+
+function confirmar(confirmar) {
+    const seuTelefone = "5538999894082"; 
+    
+    const mensagem = `Olá Taina e Gabriel! Gostaria de confirmar minha presença!`;
+    const linkZap = `https://wa.me/${seuTelefone}?text=${encodeURIComponent(mensagem)}`;
+    
+    window.open(linkZap, '_blank');
+}
