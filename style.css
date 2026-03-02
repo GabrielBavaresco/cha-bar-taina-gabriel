@@ -226,3 +226,57 @@ button:hover:not(:disabled) {
 .confirmar {
     text-align: center; 
 }
+
+/* Garante que o item reservado fique visualmente diferente, mas não bloqueie cliques */
+.item.reservado {
+    opacity: 0.7; /* Um pouco menos transparente para facilitar a leitura */
+}
+
+.item.reservado span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* IMPORTANTE: Garante que os botões dentro do wrapper continuem funcionando */
+.item.reservado .botoes-wrapper {
+    opacity: 1; 
+    pointer-events: auto; /* Garante que o clique funcione */
+}
+
+/* Estilo específico para o botão de reserva quando já está reservado */
+.item.reservado button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    pointer-events: none; /* Só o botão de reservar fica travado */
+}
+
+/* O link de preferência deve continuar com destaque total ou parcial */
+.item.reservado .btn-preferencia {
+    opacity: 1;
+    background-color: #f0f0f0;
+    border: 1px solid var(--cor-principal);
+}
+
+/* Estilo para o item reservado */
+.item.reservado {
+    opacity: 0.8; /* Diminui um pouco a opacidade para dar o efeito de reservado */
+}
+
+.item.reservado span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Garante que o link de preferência ignore a opacidade do pai e continue clicável */
+.item.reservado .btn-preferencia {
+    opacity: 1;
+    pointer-events: auto; /* Força o clique a funcionar */
+    background-color: #f4f4f4;
+}
+
+/* Estilo do botão desativado */
+button:disabled {
+    background-color: #cccccc !important;
+    cursor: not-allowed;
+    transform: none !important;
+}
